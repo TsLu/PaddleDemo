@@ -1,0 +1,5855 @@
+blocks {
+  idx: 0
+  parent_idx: -1
+  vars {
+    name: "doc_emb@GRAD"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 18
+      }
+    }
+  }
+  vars {
+    name: "embedding_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "user_emb@GRAD@RENAME@block0@2"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 14
+      }
+    }
+  }
+  vars {
+    name: "embedding_1.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "user_emb@GRAD@RENAME@block0@1"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 14
+      }
+    }
+  }
+  vars {
+    name: "reshape2_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "concat_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 56
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_6.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_5.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "doc_emb"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 10
+          dims: 18
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_0.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.w_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+          dims: 48
+        }
+      }
+    }
+  }
+  vars {
+    name: "embedding_2.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_3.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_mul_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "concat_1.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 56
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "1003"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "user_emb@GRAD@RENAME@block0@3"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 14
+      }
+    }
+  }
+  vars {
+    name: "fc_1.b_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "embedding_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+          dims: 48
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "sequence_pool_5.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_2.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "user_emb"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 10
+          dims: 14
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "sequence_pool_4.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "1004"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "concat_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 54
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape2_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.tmp_1@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_2.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+          dims: 48
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "_generated_var_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 86038
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_1.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "1001"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "1006"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "1007"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sigmoid_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "1005"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_4.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "embedding_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape2_1.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 0
+          dims: -1
+          dims: 54
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_4.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "_generated_var_3"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 1
+          dims: 4097
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "sequence_pool_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape2_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 0
+          dims: -1
+          dims: 56
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "concat_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 2
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "cast_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 2
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "click"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sequence_pool_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.b_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "1002"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape2_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+      }
+    }
+  }
+  vars {
+    name: "reduce_sum_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "concat_2.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 54
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "cast_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 1
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "log_loss_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "sigmoid_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "doc_emb@GRAD@RENAME@block0@0"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 18
+      }
+    }
+  }
+  vars {
+    name: "mean_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "log_loss_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "auc_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP64
+          dims: 1
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "auc_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP64
+          dims: 1
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.tmp_1@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "_generated_var_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 86038
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "_generated_var_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 1
+          dims: 4097
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "user_emb@GRAD"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 14
+      }
+    }
+  }
+  vars {
+    name: "reshape2_1.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+      }
+    }
+  }
+  vars {
+    name: "mean_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+        }
+      }
+    }
+  }
+  vars {
+    name: "user_emb@GRAD@RENAME@block0@0"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 14
+      }
+    }
+  }
+  vars {
+    name: "fc_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reduce_sum_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "elementwise_mul_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "doc_emb@GRAD@RENAME@block0@1"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 18
+      }
+    }
+  }
+  vars {
+    name: "fc_0.tmp_2@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_1.tmp_2@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_1.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_1.w_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+          dims: 48
+        }
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_0.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 1
+          dims: 48
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "embedding_5.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_6.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "embedding_6.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 18
+        }
+        lod_level: 1
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_1.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 48
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "sequence_pool_3.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "doc_emb@GRAD@RENAME@block0@2"
+    type {
+      type: SELECTED_ROWS
+      selected_rows {
+        data_type: FP32
+        dims: 10
+        dims: 18
+      }
+    }
+  }
+  vars {
+    name: "sequence_pool_1.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fill_constant_batch_size_like_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: -1
+          dims: 1
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_3.tmp_0@GRAD"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: -1
+          dims: 14
+        }
+        lod_level: 1
+      }
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Input"
+      arguments: "click"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fill_constant_batch_size_like_0.tmp_0"
+    }
+    type: "fill_constant_batch_size_like"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: -1
+      ints: 1
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "input_dim_idx"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "dtype"
+      type: INT
+      i: 3
+    }
+    attrs {
+      name: "str_value"
+      type: STRING
+      s: "1"
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "output_dim_idx"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "force_cpu"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "value"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 811, in fill_constant_batch_size_like\n    attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 47, in net\n    value=1)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+  }
+  ops {
+    inputs {
+      parameter: "AxisTensor"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "fill_constant_batch_size_like_0.tmp_0"
+      arguments: "click"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "concat_0.tmp_0"
+    }
+    type: "concat"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 375, in concat\n    type=\'concat\', inputs=inputs, outputs={\'Out\': [out]}, attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 51, in net\n    axis=1),\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "concat_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "cast_0.tmp_0"
+    }
+    type: "cast"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 281, in cast\n    \'out_dtype\': out.dtype})\n"
+      strings: "  File \"random_dump.py\", line 52, in net\n    dtype=\'float32\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "in_dtype"
+      type: INT
+      i: 3
+    }
+    attrs {
+      name: "out_dtype"
+      type: INT
+      i: 5
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1001"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_0.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_0.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_0.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_0.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1002"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_1.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_1.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_1.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_1.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1003"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_2.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_2.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_2.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_2.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1004"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_3.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_3.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_3.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_3.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1005"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_4.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_4.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_4.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_4.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1006"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_5.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_5.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_5.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_5.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1007"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_6.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_6.tmp_0"
+    }
+    outputs {
+      parameter: "MaxIndex"
+      arguments: "sequence_pool_6.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sequence_pool_6.tmp_0"
+    }
+    type: "sequence_pool"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "AxisTensor"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "sequence_pool_0.tmp_0"
+      arguments: "sequence_pool_1.tmp_0"
+      arguments: "sequence_pool_2.tmp_0"
+      arguments: "sequence_pool_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "concat_1.tmp_0"
+    }
+    type: "concat"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 375, in concat\n    type=\'concat\', inputs=inputs, outputs={\'Out\': [out]}, attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 97, in net\n    user_concat = fluid.layers.concat(user_embs, axis=1)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Shape"
+    }
+    inputs {
+      parameter: "ShapeTensor"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "concat_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape2_0.tmp_0"
+    }
+    outputs {
+      parameter: "XShape"
+      arguments: "reshape2_0.tmp_1"
+    }
+    type: "reshape2"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 7480, in reshape\n    \"XShape\": x_shape})\n"
+      strings: "  File \"random_dump.py\", line 98, in net\n    user_concat = fluid.layers.reshape(user_concat, [1, 48])\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 1
+      ints: 48
+    }
+  }
+  ops {
+    inputs {
+      parameter: "AxisTensor"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "sequence_pool_4.tmp_0"
+      arguments: "sequence_pool_5.tmp_0"
+      arguments: "sequence_pool_6.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "concat_2.tmp_0"
+    }
+    type: "concat"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 375, in concat\n    type=\'concat\', inputs=inputs, outputs={\'Out\': [out]}, attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 99, in net\n    doc_concat = fluid.layers.concat(doc_embs, axis=1)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Shape"
+    }
+    inputs {
+      parameter: "ShapeTensor"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "concat_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape2_1.tmp_0"
+    }
+    outputs {
+      parameter: "XShape"
+      arguments: "reshape2_1.tmp_1"
+    }
+    type: "reshape2"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 7480, in reshape\n    \"XShape\": x_shape})\n"
+      strings: "  File \"random_dump.py\", line 100, in net\n    doc_concat = fluid.layers.reshape(doc_concat, [1, 48])\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 1
+      ints: 48
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape2_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_0.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_0.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "force_fp32_output"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1721, in fc\n    \"y_num_col_dims\": 1})\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "scale_out"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_x"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_y"
+      type: FLOATS
+      floats: 1.0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_0.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_0.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 135, in append_bias_op\n    attrs={\'axis\': dim_start})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1734, in fc\n    pre_activation = helper.append_bias_op(pre_bias, dim_start=num_flatten_dims)\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_0.tmp_2"
+    }
+    type: "relu"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 159, in append_activation\n    attrs=act)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1736, in fc\n    return helper.append_activation(pre_activation)\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape2_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_1.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "force_fp32_output"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1721, in fc\n    \"y_num_col_dims\": 1})\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "scale_out"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_x"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_y"
+      type: FLOATS
+      floats: 1.0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_1.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 135, in append_bias_op\n    attrs={\'axis\': dim_start})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1734, in fc\n    pre_activation = helper.append_bias_op(pre_bias, dim_start=num_flatten_dims)\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_1.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_1.tmp_2"
+    }
+    type: "relu"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 159, in append_activation\n    attrs=act)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1736, in fc\n    return helper.append_activation(pre_activation)\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_mul_0.tmp_0"
+    }
+    type: "elementwise_mul"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 12270, in _elementwise_op\n    \'use_mkldnn\': use_mkldnn})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 12701, in elementwise_mul\n    return _elementwise_op(LayerHelper(\'elementwise_mul\', **locals()))\n"
+      strings: "  File \"random_dump.py\", line 111, in net\n    fluid.layers.elementwise_mul(user_fc, doc_fc),\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_mul_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_0.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "in_dtype"
+      type: INT
+      i: -1
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 5707, in reduce_sum\n    attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 113, in net\n    keep_dim=True)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "out_dtype"
+      type: INT
+      i: -1
+    }
+    attrs {
+      name: "dim"
+      type: INTS
+      ints: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reduce_sum_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    type: "sigmoid"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/layer_function_generator.py\", line 271, in func\n    helper.append_op(type=op_type, inputs={\"X\": x}, outputs={\"Out\": output})\n"
+      strings: "  File \"random_dump.py\", line 115, in net\n    prediction = fluid.layers.sigmoid(self.similarity)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "click"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "cast_1.tmp_0"
+    }
+    type: "cast"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 281, in cast\n    \'out_dtype\': out.dtype})\n"
+      strings: "  File \"random_dump.py\", line 119, in net\n    label=fluid.layers.cast(x=label, dtype=\'float32\'))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "in_dtype"
+      type: INT
+      i: 3
+    }
+    attrs {
+      name: "out_dtype"
+      type: INT
+      i: 5
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Labels"
+      arguments: "cast_1.tmp_0"
+    }
+    inputs {
+      parameter: "Predicted"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    outputs {
+      parameter: "Loss"
+      arguments: "log_loss_0.tmp_0"
+    }
+    type: "log_loss"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 13969, in log_loss\n    attrs={\'epsilon\': epsilon})\n"
+      strings: "  File \"random_dump.py\", line 119, in net\n    label=fluid.layers.cast(x=label, dtype=\'float32\'))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-05
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "log_loss_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "mean_0.tmp_0"
+    }
+    type: "mean"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 13331, in mean\n    type=\"mean\", inputs={\"X\": x}, attrs={}, outputs={\"Out\": out})\n"
+      strings: "  File \"random_dump.py\", line 120, in net\n    self.avg_cost = fluid.layers.mean(x=cost)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 256
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Label"
+      arguments: "click"
+    }
+    inputs {
+      parameter: "Predict"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    inputs {
+      parameter: "StatNeg"
+      arguments: "_generated_var_1"
+    }
+    inputs {
+      parameter: "StatPos"
+      arguments: "_generated_var_0"
+    }
+    outputs {
+      parameter: "AUC"
+      arguments: "auc_0.tmp_1"
+    }
+    outputs {
+      parameter: "StatNegOut"
+      arguments: "_generated_var_1"
+    }
+    outputs {
+      parameter: "StatPosOut"
+      arguments: "_generated_var_0"
+    }
+    type: "auc"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/metric_op.py\", line 228, in auc\n    \"StatNegOut\": [batch_stat_neg]\n"
+      strings: "  File \"random_dump.py\", line 126, in net\n    slide_steps=20)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "slide_steps"
+      type: INT
+      i: 20
+    }
+    attrs {
+      name: "num_thresholds"
+      type: INT
+      i: 4096
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "curve"
+      type: STRING
+      s: "ROC"
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Label"
+      arguments: "click"
+    }
+    inputs {
+      parameter: "Predict"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    inputs {
+      parameter: "StatNeg"
+      arguments: "_generated_var_3"
+    }
+    inputs {
+      parameter: "StatPos"
+      arguments: "_generated_var_2"
+    }
+    outputs {
+      parameter: "AUC"
+      arguments: "auc_0.tmp_0"
+    }
+    outputs {
+      parameter: "StatNegOut"
+      arguments: "_generated_var_3"
+    }
+    outputs {
+      parameter: "StatPosOut"
+      arguments: "_generated_var_2"
+    }
+    type: "auc"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/metric_op.py\", line 247, in auc\n    \"StatNegOut\": [stat_neg]\n"
+      strings: "  File \"random_dump.py\", line 126, in net\n    slide_steps=20)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "slide_steps"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "num_thresholds"
+      type: INT
+      i: 4096
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "curve"
+      type: STRING
+      s: "ROC"
+    }
+  }
+  ops {
+    outputs {
+      parameter: "Out"
+      arguments: "mean_0.tmp_0@GRAD"
+    }
+    type: "fill_constant"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 257
+    }
+    attrs {
+      name: "shape"
+      type: LONGS
+      longs: 1
+    }
+    attrs {
+      name: "value"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "dtype"
+      type: INT
+      i: 5
+    }
+    attrs {
+      name: "force_cpu"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "mean_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "log_loss_0.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "log_loss_0.tmp_0@GRAD"
+    }
+    type: "mean_grad"
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Labels"
+      arguments: "cast_1.tmp_0"
+    }
+    inputs {
+      parameter: "Loss@GRAD"
+      arguments: "log_loss_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "Predicted"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    outputs {
+      parameter: "Predicted@GRAD"
+      arguments: "sigmoid_0.tmp_0@GRAD"
+    }
+    type: "log_loss_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 13969, in log_loss\n    attrs={\'epsilon\': epsilon})\n"
+      strings: "  File \"random_dump.py\", line 119, in net\n    label=fluid.layers.cast(x=label, dtype=\'float32\'))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-05
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out"
+      arguments: "sigmoid_0.tmp_0"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sigmoid_0.tmp_0@GRAD"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "reduce_sum_0.tmp_0@GRAD"
+    }
+    type: "sigmoid_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/layer_function_generator.py\", line 271, in func\n    helper.append_op(type=op_type, inputs={\"X\": x}, outputs={\"Out\": output})\n"
+      strings: "  File \"random_dump.py\", line 115, in net\n    prediction = fluid.layers.sigmoid(self.similarity)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "reduce_sum_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_mul_0.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "elementwise_mul_0.tmp_0@GRAD"
+    }
+    type: "reduce_sum_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "in_dtype"
+      type: INT
+      i: -1
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 5707, in reduce_sum\n    attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 113, in net\n    keep_dim=True)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "out_dtype"
+      type: INT
+      i: -1
+    }
+    attrs {
+      name: "dim"
+      type: INTS
+      ints: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "elementwise_mul_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.tmp_2"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "fc_0.tmp_2@GRAD"
+    }
+    outputs {
+      parameter: "Y@GRAD"
+      arguments: "fc_1.tmp_2@GRAD"
+    }
+    type: "elementwise_mul_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 12270, in _elementwise_op\n    \'use_mkldnn\': use_mkldnn})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 12701, in elementwise_mul\n    return _elementwise_op(LayerHelper(\'elementwise_mul\', **locals()))\n"
+      strings: "  File \"random_dump.py\", line 111, in net\n    fluid.layers.elementwise_mul(user_fc, doc_fc),\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out"
+      arguments: "fc_1.tmp_2"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_1.tmp_2@GRAD"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "fc_1.tmp_1@GRAD"
+    }
+    type: "relu_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 159, in append_activation\n    attrs=act)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1736, in fc\n    return helper.append_activation(pre_activation)\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_1.tmp_1@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "fc_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.b_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "fc_1.tmp_0@GRAD"
+    }
+    outputs {
+      parameter: "Y@GRAD"
+      arguments: "fc_1.b_0@GRAD"
+    }
+    type: "elementwise_add_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "fc_1.b_0"
+      strings: "fc_1.b_0@GRAD"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 135, in append_bias_op\n    attrs={\'axis\': dim_start})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1734, in fc\n    pre_activation = helper.append_bias_op(pre_bias, dim_start=num_flatten_dims)\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_1.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "reshape2_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.w_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "reshape2_1.tmp_0@GRAD"
+    }
+    outputs {
+      parameter: "Y@GRAD"
+      arguments: "fc_1.w_0@GRAD"
+    }
+    type: "mul_grad"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "fc_1.w_0"
+      strings: "fc_1.w_0@GRAD"
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "force_fp32_output"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1721, in fc\n    \"y_num_col_dims\": 1})\n"
+      strings: "  File \"random_dump.py\", line 109, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "scale_out"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_x"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_y"
+      type: FLOATS
+      floats: 1.0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out"
+      arguments: "fc_0.tmp_2"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_0.tmp_2@GRAD"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "fc_0.tmp_1@GRAD"
+    }
+    type: "relu_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_cudnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 159, in append_activation\n    attrs=act)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1736, in fc\n    return helper.append_activation(pre_activation)\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_0.tmp_1@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_0.b_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "fc_0.tmp_0@GRAD"
+    }
+    outputs {
+      parameter: "Y@GRAD"
+      arguments: "fc_0.b_0@GRAD"
+    }
+    type: "elementwise_add_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "y_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_data_format"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "fc_0.b_0"
+      strings: "fc_0.b_0@GRAD"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 135, in append_bias_op\n    attrs={\'axis\': dim_start})\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1734, in fc\n    pre_activation = helper.append_bias_op(pre_bias, dim_start=num_flatten_dims)\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "fc_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "reshape2_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_0.w_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "reshape2_0.tmp_0@GRAD"
+    }
+    outputs {
+      parameter: "Y@GRAD"
+      arguments: "fc_0.w_0@GRAD"
+    }
+    type: "mul_grad"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "fc_0.w_0"
+      strings: "fc_0.w_0@GRAD"
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "force_fp32_output"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1721, in fc\n    \"y_num_col_dims\": 1})\n"
+      strings: "  File \"random_dump.py\", line 105, in net\n    act=\'relu\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "scale_out"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_x"
+      type: FLOAT
+      f: 1.0
+    }
+    attrs {
+      name: "scale_y"
+      type: FLOATS
+      floats: 1.0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "reshape2_1.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "XShape"
+      arguments: "reshape2_1.tmp_1"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "concat_2.tmp_0@GRAD"
+    }
+    type: "reshape2_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 7480, in reshape\n    \"XShape\": x_shape})\n"
+      strings: "  File \"random_dump.py\", line 100, in net\n    doc_concat = fluid.layers.reshape(doc_concat, [1, 48])\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 1
+      ints: 48
+    }
+  }
+  ops {
+    inputs {
+      parameter: "AxisTensor"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "concat_2.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "sequence_pool_4.tmp_0"
+      arguments: "sequence_pool_5.tmp_0"
+      arguments: "sequence_pool_6.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "sequence_pool_4.tmp_0@GRAD"
+      arguments: "sequence_pool_5.tmp_0@GRAD"
+      arguments: "sequence_pool_6.tmp_0@GRAD"
+    }
+    type: "concat_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 375, in concat\n    type=\'concat\', inputs=inputs, outputs={\'Out\': [out]}, attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 99, in net\n    doc_concat = fluid.layers.concat(doc_embs, axis=1)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "reshape2_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "XShape"
+      arguments: "reshape2_0.tmp_1"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "concat_1.tmp_0@GRAD"
+    }
+    type: "reshape2_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 7480, in reshape\n    \"XShape\": x_shape})\n"
+      strings: "  File \"random_dump.py\", line 98, in net\n    user_concat = fluid.layers.reshape(user_concat, [1, 48])\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 1
+      ints: 48
+    }
+  }
+  ops {
+    inputs {
+      parameter: "AxisTensor"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "concat_1.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "sequence_pool_0.tmp_0"
+      arguments: "sequence_pool_1.tmp_0"
+      arguments: "sequence_pool_2.tmp_0"
+      arguments: "sequence_pool_3.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "sequence_pool_0.tmp_0@GRAD"
+      arguments: "sequence_pool_1.tmp_0@GRAD"
+      arguments: "sequence_pool_2.tmp_0@GRAD"
+      arguments: "sequence_pool_3.tmp_0@GRAD"
+    }
+    type: "concat_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "use_quantizer"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/tensor.py\", line 375, in concat\n    type=\'concat\', inputs=inputs, outputs={\'Out\': [out]}, attrs=attrs)\n"
+      strings: "  File \"random_dump.py\", line 97, in net\n    user_concat = fluid.layers.concat(user_embs, axis=1)\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "axis"
+      type: INT
+      i: 1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_6.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_6.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_6.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1007"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_6.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "doc_emb@GRAD@RENAME@block0@0"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_5.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_5.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_5.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1006"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_5.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "doc_emb@GRAD@RENAME@block0@1"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_4.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_4.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_4.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 93, in net\n    pool_type=\'sum\'\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1005"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_4.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "doc_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "doc_emb@GRAD@RENAME@block0@2"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 90, in net\n    param_attr=fluid.ParamAttr(name=\"doc_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_3.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_3.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_3.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1004"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_3.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "user_emb@GRAD@RENAME@block0@0"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_2.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_2.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_2.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1003"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_2.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "user_emb@GRAD@RENAME@block0@1"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_1.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_1.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_1.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1002"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_1.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "user_emb@GRAD@RENAME@block0@2"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "sequence_pool_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "embedding_0.tmp_0"
+    }
+    outputs {
+      parameter: "X@GRAD"
+      arguments: "embedding_0.tmp_0@GRAD"
+    }
+    type: "sequence_pool_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/sequence_lod.py\", line 357, in sequence_pool\n    \"pad_value\": pad_value\n"
+      strings: "  File \"random_dump.py\", line 80, in net\n    pool_type=\'sum\')\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "pad_value"
+      type: FLOAT
+      f: 0.0
+    }
+    attrs {
+      name: "pooltype"
+      type: STRING
+      s: "SUM"
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "1001"
+    }
+    inputs {
+      parameter: "Out@GRAD"
+      arguments: "embedding_0.tmp_0@GRAD"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "user_emb"
+    }
+    outputs {
+      parameter: "W@GRAD"
+      arguments: "user_emb@GRAD@RENAME@block0@3"
+    }
+    type: "lookup_table_grad"
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "epmap"
+      type: STRINGS
+    }
+    attrs {
+      name: "is_distributed"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "op_namescope"
+      type: STRING
+      s: "/"
+    }
+    attrs {
+      name: "op_callstack"
+      type: STRINGS
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/framework.py\", line 2610, in append_op\n    attrs=kwargs.get(\"attrs\", None))\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layer_helper.py\", line 43, in append_op\n    return self.main_program.current_block().append_op(*args, **kwargs)\n"
+      strings: "  File \"/home/work/.pyenv/versions/2.7.14/lib/python2.7/site-packages/paddle/fluid/layers/nn.py\", line 1875, in embedding\n    \'padding_idx\': padding_idx\n"
+      strings: "  File \"random_dump.py\", line 77, in net\n    param_attr=fluid.ParamAttr(name=\"user_emb\"))\n"
+      strings: "  File \"random_dump.py\", line 134, in train\n    train_program, startup_program, avg_cost = self.net()\n"
+      strings: "  File \"random_dump.py\", line 230, in <module>\n    obj.train()\n"
+    }
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: -1
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "remote_prefetch"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "grad_inplace"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "table_names"
+      type: STRINGS
+    }
+    attrs {
+      name: "trainer_id"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "height_sections"
+      type: LONGS
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "user_emb@GRAD@RENAME@block0@0"
+      arguments: "user_emb@GRAD@RENAME@block0@1"
+      arguments: "user_emb@GRAD@RENAME@block0@2"
+      arguments: "user_emb@GRAD@RENAME@block0@3"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "user_emb@GRAD"
+    }
+    type: "sum"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "user_emb"
+      strings: "user_emb@GRAD"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "doc_emb@GRAD@RENAME@block0@0"
+      arguments: "doc_emb@GRAD@RENAME@block0@1"
+      arguments: "doc_emb@GRAD@RENAME@block0@2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "doc_emb@GRAD"
+    }
+    type: "sum"
+    attrs {
+      name: "op_role_var"
+      type: STRINGS
+      strings: "doc_emb"
+      strings: "doc_emb@GRAD"
+    }
+    attrs {
+      name: "op_role"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "use_mkldnn"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "op_device"
+      type: STRING
+      s: ""
+    }
+  }
+}
+version {
+  version: 0
+}
+
